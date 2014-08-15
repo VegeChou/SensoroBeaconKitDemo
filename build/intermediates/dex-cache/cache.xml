@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/Sensoro/AndroidStudioProjects/SensoroBeaconKitDemo/app/build/intermediates/pre-dexed/debug/sensorobeaconkit-69537ada9fa299b91805347a86de23fc9461ab72.jar"
+        jar="/Users/Sensoro/AndroidStudioProjects/SensoroBeaconKitDemo/app/libs/sensorobeaconkit.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e977e12eed406ac6fe09d5a85512d9b4bc9229ad"/>
+
+</pre-dex-items>
