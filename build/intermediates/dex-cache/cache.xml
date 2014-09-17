@@ -2,10 +2,10 @@
 <pre-dex-items>
 
     <item
-        dex="/Users/Sensoro/AndroidStudioProjects/SensoroBeaconKitDemo/app/build/intermediates/pre-dexed/debug/sensorobeaconkit-69537ada9fa299b91805347a86de23fc9461ab72.jar"
-        jar="/Users/Sensoro/AndroidStudioProjects/SensoroBeaconKitDemo/app/libs/sensorobeaconkit.jar"
+        dex="/Users/Sensoro/AndroidStudioProjects/github.SensoroBeaconKitDemo/app/build/intermediates/pre-dexed/debug/sensorobeaconkit-746c02493563bade67b657083765fc1494f832bb.jar"
+        jar="/Users/Sensoro/AndroidStudioProjects/github.SensoroBeaconKitDemo/app/libs/sensorobeaconkit.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="e977e12eed406ac6fe09d5a85512d9b4bc9229ad"/>
+        sha1="7256526362a19f36af5c397fe7065566d8ee786e"/>
 
 </pre-dex-items>

@@ -3,17 +3,15 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 20
     buildToolsVersion '20.0.0'
-
     defaultConfig {
-        applicationId "com.sensoro.sensorobeaconkitdemo"
+        applicationId 'com.sensoro.sensorobeaconkitdemo'
         minSdkVersion 18
         targetSdkVersion 20
         versionCode 1
-        versionName "1.0"
+        versionName '1.0'
     }
-
     signingConfigs {
-        myConfig{
+        myConfig {
             storeFile file("/Users/Sensoro/Desktop/key/androidkey.jks")
             storePassword "sensoro"
             keyAlias "sensoro"
@@ -22,10 +20,12 @@ android {
     }
     buildTypes {
         release {
-            signingConfig  signingConfigs.myConfig
+            signingConfig signingConfigs.myConfig
             runProguard true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    productFlavors {
     }
 }
 

@@ -7,5 +7,6 @@
     <string name="line">-</string>
     <string name="modle">modle:</string>
     <string name="rssi">rssi:</string>
+    <string name="app_id">11</string>
 
 </resources>

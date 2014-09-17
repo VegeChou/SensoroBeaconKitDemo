@@ -2,7 +2,10 @@ package com.sensoro.sensorobeaconkitdemo;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +23,7 @@ import java.util.ArrayList;
 
 
 public class SensoroActivity extends Activity implements SensoroBeaconManager.BeaconManagerListener,SensoroBeaconConnection.BeaconConnectionCallback{
+    private static final String TAG = SensoroActivity.class.getSimpleName();
     private Context context;
     private ListView listView;
     private SensoroAdapter sensoroAdapter;
@@ -31,6 +35,20 @@ public class SensoroActivity extends Activity implements SensoroBeaconManager.Be
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sensoro);
+
+//        ApplicationInfo applicationInfo = null;
+//        try {
+//            applicationInfo = this.getPackageManager().getApplicationInfo(getPackageName(), PackageManager.GET_META_DATA);
+//        } catch (PackageManager.NameNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//        String appKey = applicationInfo.metaData.getString("app_key");
+////        String appId = applicationInfo.metaData.getString("app_id");
+//        Object appId = applicationInfo.metaData.get("app_id");
+//        if (appId != null) {
+//            String id = appId.toString();
+//            Log.v(TAG,id);
+//        }
 
         init();
     }
@@ -128,6 +146,7 @@ public class SensoroActivity extends Activity implements SensoroBeaconManager.Be
      */
     @Override
     public void onNewBeacon(final Beacon beacon) {
+        Log.e("zwz","activity-major"+beacon.getMajor()+"-minor"+beacon.getMinor());
         runOnUiThread(new Runnable() {
             @Override
             public void run() {

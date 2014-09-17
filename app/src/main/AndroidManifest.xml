@@ -10,6 +10,8 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <meta-data android:name="app_key" android:value="aaaaaa" ></meta-data>
+        <meta-data android:name="app_id" android:value="11" ></meta-data>
         <activity
             android:name=".SensoroActivity"
             android:label="@string/app_name" >
@@ -22,6 +24,7 @@
 
         <service android:name="com.sensoro.beacon.kit.BeaconProcessService"></service>
         <service android:name="com.sensoro.beacon.kit.BeaconService"></service>
+        <!--<service android:name="com.sensoro.sensorobeaconkitdemo.MyBeaconService"></service>-->
     </application>
 
 </manifest>
